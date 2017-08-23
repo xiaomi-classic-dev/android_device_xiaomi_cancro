@@ -703,6 +703,14 @@ service ds_fmc_appd /system/bin/ds_fmc_appd -p "rmnet0" -D
     group radio wifi inet
     disabled
     oneshot
+    
+    
+service ril-daemon1 /vendor/bin/hw/rild -c 2
+    class main
+    user radio
+    group radio cache inet misc audio log readproc wakelock
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+    disabled
 
 on property:persist.data.ds_fmc_app.mode=1
     start ds_fmc_appd
