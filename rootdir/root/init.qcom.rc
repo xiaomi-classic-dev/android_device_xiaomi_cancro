@@ -736,7 +736,7 @@ on property:usb_uicc.spi_bridge_enabled=0
 service charger /sbin/healthd -c
     class charger
     critical
-    seclabel u:r:healthd:s0
+    seclabel u:r:charger:s0
 
 service ssr_diag /system/bin/ssr_diag
     class late_start
