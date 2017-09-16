@@ -33,6 +33,8 @@ on early-init
     write /sys/block/mmcblk0/queue/scheduler "noop"
 
 on init
+    export LD_PRELOAD libshim_atomic.so
+
     mkdir /persist 0771 system system
     mkdir /firmware 0771 system system
     symlink /sdcard /storage/sdcard0
