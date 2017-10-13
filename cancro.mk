@@ -270,9 +270,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-# Baseband assertion
-PRODUCT_PACKAGES += librecovery_updater_cancro
-
 # HIDL
 DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
 
