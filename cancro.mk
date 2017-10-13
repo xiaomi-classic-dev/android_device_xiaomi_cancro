@@ -250,6 +250,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    context_hub.default \
     android.hardware.contexthub@1.0-impl \
     android.hardware.sensors@1.0-impl
 
