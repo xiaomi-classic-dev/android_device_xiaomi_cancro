@@ -35,6 +35,9 @@ if [ $RAW_ID == 1974 ] || [ $RAW_ID == 1972 ]; then
     rm -f /system/vendor/etc/diracmobile.config
     mv /system/vendor/etc/diracmobile_4.config /system/vendor/etc/diracmobile.config
 else
+    # Remove consumerir support
+    rm -rf /system/etc/permissions/android.hardware.consumerir.xml
+    rm -rf /system/lib/hw/consumerir.msm8974.so
     # Remove Mi4 audio configs
     rm -rf /system/etc/acdbdata/MTP/MTP_Speaker_cal_4.acdb
     rm -f /system/etc/mixer_paths_4.xml
