@@ -80,7 +80,6 @@ QCOM_BT_USE_SMD_TTY                         := true
 BLUETOOTH_HCI_USE_MCT                       := true
 
 # Radio
-TARGET_RIL_VARIANT                := caf
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 
 # Graphics
