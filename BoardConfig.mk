@@ -203,7 +203,6 @@ TARGET_LD_SHIM_LIBS := /system/lib/libcutils.so|libshim_atomic.so:/system/vendor
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
