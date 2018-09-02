@@ -26,7 +26,7 @@ BOARD_HAVE_QCOM_FM := true
 TARGET_FM_LEGACY_PATCHLOADER := true
 
 # Lineage Hardware
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
+JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
 
 # ReleaseTools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
