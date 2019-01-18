@@ -21,6 +21,9 @@ DEVICE_PATH := device/xiaomi/cancro
 # Audio
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 
+# Display
+TARGET_SCREEN_DENSITY := 480
+
 # FM Radio
 BOARD_HAVE_QCOM_FM := true
 TARGET_FM_LEGACY_PATCHLOADER := true

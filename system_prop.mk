@@ -7,6 +7,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.video=false \
     persist.vendor.audio.fluence.speaker=false
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=480
