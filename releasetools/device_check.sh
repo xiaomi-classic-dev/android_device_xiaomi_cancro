@@ -16,6 +16,8 @@
 # limitations under the License.
 #
 
+mount /system
+
 RAW_ID=`cat /sys/devices/system/soc/soc0/raw_id`
 
 if [ $RAW_ID == 1974 ] || [ $RAW_ID == 1972 ]; then
@@ -55,3 +57,5 @@ else
     # Unsupported device
     return 1
 fi
+
+umount /system
