@@ -13,6 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
+
 # Inherit from cancro device
 $(call inherit-product, device/xiaomi/cancro/cancro.mk)
 
